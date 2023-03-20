@@ -10,39 +10,47 @@ const myData = [
 
 const App = () => {
   return (
-    <div className="relative  ">
-<div className=" absolute rounded-lg bg-slate-200 sm:left-24 md:left-96 lg:right-96 ">
-      <h2 className="content-center flex pt-20  justify-center">DOANH THU TỪNG MÔN THÁNG 1</h2>
-      <VictoryPie
-      
-        data={myData}
-      className=""
-        colorScale={["blue", "yellow", "red", "orange"]}
-        radius={50}
-      />
-      <div className="grid grid-cols-2   justify-center ">
-        <div className="flex items-center justify-center gap-8 pb-8">
-          <div className="bg-blue-600 w-20 h-10"></div>
-          <div>Toán</div>
-        </div>
-        <div className="flex items-center justify-center gap-8 pb-8">
-        <div className="bg-yellow-300 w-20 h-10"></div>
-        <div>Lý</div>
-        </div>
-        <div className="flex items-center justify-center gap-8 pb-8">
-        <div className="bg-red-600 w-20 h-10"></div>
-        <div>Hóa</div>
-        </div>
-        <div className="flex items-center justify-center gap-8 pb-8 pl-14">
-        <div className="bg-orange-400 w-20 h-10"></div>
-        <div>Tiếng Anh</div>
-        </div>
-       
-        
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        backgroundColor: "#fff",
+        border: "4px #000",
+        borderRadius: "25px",
+      }}
+    >
+      {/* <div className="items-center justify-center bg-white rounded-3xl"> */}
+      <div>
+        <h2 className="content-center flex justify-center">
+          DOANH THU TỪNG MÔN THÁNG 1
+        </h2>
+        <VictoryPie
+          data={myData}
+          className=""
+          colorScale={["blue", "yellow", "red", "orange"]}
+          radius={100}
+        />
+
+        {/* <div className="grid grid-cols-2   justify-center ">
+          <div className="flex items-center justify-center gap-8 pb-8">
+            <div className="bg-blue-600 w-20 h-10"></div>
+            <div>Toán</div>
+          </div>
+          <div className="flex items-center justify-center gap-8 pb-8">
+            <div className="bg-yellow-300 w-20 h-10"></div>
+            <div>Lý</div>
+          </div>
+          <div className="flex items-center justify-center gap-8 pb-8">
+            <div className="bg-red-600 w-20 h-10"></div>
+            <div>Hóa</div>
+          </div>
+          <div className="flex items-center justify-center gap-8 pb-8 pl-14">
+            <div className="bg-orange-400 w-20 h-10"></div>
+            <div>Tiếng Anh</div>
+          </div>
+        </div> */}
       </div>
     </div>
-    </div>
-    
   );
 };
 

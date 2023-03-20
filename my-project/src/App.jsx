@@ -37,11 +37,9 @@ class ChartExample extends Component {
     const { data } = this.state;
 
     return (
-      <div className="p-24 items-center justify-center bg-slate-200 rounded-lg">
-        <ResponsiveContainer className=" chart " height={300}>
+      <div className="p-24 items-center justify-center bg-white rounded-3xl">
+        <ResponsiveContainer className=" chart " height={screen.height * 0.3} width={screen.width * 0.5}>
           <LineChart
-            width={600}
-            height={300}
             data={data}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
